@@ -27,9 +27,7 @@
     "fis": "1.9.18",
     "fis-parser-po": "0.0.1",
     "fis-parser-less": "0.1.2",
-    "fis-postprocessor-jswrapper": "0.0.8",
-    "fswig-preprocessor-extlang": "0.0.2",
-    "fswig-postprocessor-require-async": "0.0.1",
-    "fswig-command-server": "0.1.1"
+    "fis-preprocessor-extlang": "0.0.2",
+    "fis-postprocessor-require-async": "0.0.1"
   }
 }
