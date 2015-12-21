@@ -1,7 +1,6 @@
-yogurt [ˈjoɡət]
+fiswig
 ======================
 
-# 已停止更新，请移步至[yog2](https://github.com/fex-team/yog2)
 
 基于 [fis](http://fis.baidu.com) 扩展针对服务端为 [express.js](http://expressjs.com/) 的前端集成解决方案。
 
@@ -33,19 +32,11 @@ yogurt [ˈjoɡət]
 如果还没有安装 [node](http://nodejs.org) 请先安装 [node](http://nodejs.org).
 
 ```bash
-# 安装 yogurt 到全局
-npm install -g yogurt
+# 安装 fiswig 到全局
+npm install -g fiswig
 
-# 安装 lights 如果你还没安装过。
-npm install -g lights
-
-# 下载 demo.
-lights install yogurt-demo
-
-# 进入 yogurt-demo 目录， release 后就可以预览了。
-cd yogurt-demo
-yogurt release
-yogurt server start
+fiswig release
+fiswig server start
 ```
 
 ## 目录规范
@@ -261,7 +252,7 @@ rewrite \/ajax /example/ajax.js
 
 采用 bigpipe 方案，允许你在渲染页面的时候，提前将框架输出，后续再把耗时的 pagelet 通过 chunk 方式输出到页面，以加速网页渲染。
 
-目前此机制已集成在 yogurt 中，通过给 widget 设置不同的模式便能自动启动。
+目前此机制已集成在 fiswig 中，通过给 widget 设置不同的模式便能自动启动。
 
 1. `sync` 默认就是此模式，直接输出。
 2. `quicking` 此类 widget 在输出时，只会输出个壳子，内容由用户自行决定通过 js，另起请求完成填充，包括静态资源加载。
@@ -307,13 +298,7 @@ module.exports = function(req, res, setData) {
 }
 ```
 
-要让 bigpipe 正常运行，需要前端引入 [bigpipe.js](https://github.com/fex-team/yog-bigpipe/blob/master/scripts/bigpipe.js), 另外 pagelet 为 `quickling` 模式，是不会自动加载的，需要用户主动去调用 BigPipe.load 方法，才会加载并渲染。
-
-更多信息请查看 [yog-bigpipe](https://github.com/fex-team/yog-bigpipe);
-
 ## 后端结合
-
-yogurt 负责前端部分的工作，将会产出以下文件。后端只需提供 controller 和 model, controller 中把 model 与 tpl 关联，然后选择渲染模板文件。 关于后端框架部分，请查看 [yog](https://github.com/fex-team/yog)。
 
 ```
 ├── config
