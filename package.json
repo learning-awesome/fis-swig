@@ -1,36 +1,35 @@
 {
-  "name": "yogurt",
+  "name": "fswig",
   "version": "0.1.0",
   "description": "Front End Integrated Solution for node express.",
-  "main": "yogurt.js",
+  "main": "fswig.js",
   "bin": {
-    "yogurt": "bin/yogurt",
-    "yog": "bin/yogurt"
+    "fswig": "bin/fswig"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fex-team/yogurt.git"
+    "url": "https://github.com/hubcarl/fswig.git"
   },
   "keywords": [
     "fis",
     "node"
   ],
-  "author": "fex-team",
+  "author": "hubcarl",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fex-team/yogurt/issues"
+    "url": "https://github.com/hubcarl/fswig/issues"
   },
-  "homepage": "https://github.com/fex-team/yogurt",
+  "homepage": "https://github.com/hubcarl/fswig",
   "dependencies": {
     "fis": "1.9.18",
     "fis-parser-po": "0.0.1",
     "fis-parser-less": "0.1.2",
-    "yogurt-preprocessor-extlang": "0.0.2",
-    "yogurt-postprocessor-require-async": "0.0.1",
-    "yogurt-command-server": "0.1.1",
-    "fis-postprocessor-jswrapper": "0.0.8"
+    "fis-postprocessor-jswrapper": "0.0.8",
+    "fswig-preprocessor-extlang": "0.0.2",
+    "fswig-postprocessor-require-async": "0.0.1",
+    "fswig-command-server": "0.1.1"
   }
 }

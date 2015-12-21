@@ -1,9 +1,9 @@
 var fis = module.exports = require('fis');
 
-// 让 jello 打头的先加载。
-fis.require.prefixes.unshift('yogurt');
+// 让 fswig 打头的先加载。
+fis.require.prefixes.unshift('fswig');
 
-fis.cli.name = 'yogurt';
+fis.cli.name = 'fswig';
 fis.cli.info = fis.util.readJSON(__dirname + '/package.json');
 
 fis.config.merge({
