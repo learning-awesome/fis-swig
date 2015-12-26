@@ -1,17 +1,17 @@
 {
-  "name": "fswig",
+  "name": "fis-swig",
   "version": "0.1.0",
   "description": "Front End Integrated Solution for node express.",
-  "main": "fswig.js",
+  "main": "fis-swig.js",
   "bin": {
-    "fswig": "bin/fswig"
+    "fis-swig": "bin/fis-swig"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hubcarl/fswig.git"
+    "url": "https://github.com/hubcarl/fis-swig.git"
   },
   "keywords": [
     "fis",
@@ -20,9 +20,9 @@
   "author": "hubcarl",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hubcarl/fswig/issues"
+    "url": "https://github.com/hubcarl/fis-swig/issues"
   },
-  "homepage": "https://github.com/hubcarl/fswig",
+  "homepage": "https://github.com/hubcarl/fis-swig",
   "dependencies": {
     "fis": "1.9.18",
     "fis-parser-po": "0.0.1",
